@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar-brand{
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding-left: 10px;
+    color: rgb(255, 255, 255) !important;
+}
+.bgcolor{
+    background-color: rgba(0, 0, 0, 0.692) !important;
+}
+
+.nav-item .nav-link{
+    color: rgba(0, 0, 0, 0.692) !important;
+    font-size: 1em;
+}
+
+.navbar-toggler{
+    background-color: #11999e !important;;
+}
+
+.offcanvas-header{
+    background-color: #11999e !important;
+}

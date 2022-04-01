@@ -1,0 +1,532 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@300&family=Poppins:wght@400;500;700&display=swap");
+
+/* General */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  color: #40514e;
+}
+
+/* Navbar start */
+.navbar {
+  padding: 0.8rem;
+}
+.navbar-nav li {
+  padding-right: 20px;
+}
+.nav-link {
+  font-size: 1.1em !important;
+}
+
+.navbar-brand img {
+  width: 40px;
+  margin-bottom: 7px;
+}
+/* Navbar end */
+
+/* Carousel start */
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-caption h1 {
+  font-size: 500%;
+  text-shadow: 1px 1px 15px #40514e;
+}
+.carousel-caption h3 {
+  font-size: 200%;
+  font-weight: 500;
+  text-shadow: 1px 1px 10px #40514e;
+  padding-bottom: 1rem;
+}
+
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/* Carousel end */
+
+/* Jumbotron start */
+.jumbotron {
+  padding: 1rem;
+  border-radius: 0;
+}
+
+.padding {
+  padding-bottom: 2rem;
+}
+
+.welcome {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+/* Jumbotron end */
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+  .social a {
+    font-size: 4em;
+    padding: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .carousel-caption {
+    top: 45%;
+  }
+
+  .carousel-caption h1 {
+    font-size: 350%;
+  }
+  .carousel-caption h3 {
+    font-size: 140%;
+    font-weight: 400;
+    padding-bottom: 0.2rem;
+  }
+  .display-4 {
+    font-size: 200%;
+  }
+
+  .social a {
+    font-size: 2.5em;
+    padding: 1.2rem;
+  }
+}
+@media (max-width: 576px) {
+  .carousel-caption {
+    top: 40%;
+  }
+
+  .carousel-caption h1 {
+    font-size: 250%;
+  }
+  .carousel-caption h3 {
+    font-size: 110%;
+  }
+  .carousel-indicators {
+    display: none;
+  }
+  .display-4 {
+    font-size: 160%;
+  }
+
+  .social a {
+    font-size: 2em;
+    padding: 0.7rem;
+  }
+}
+
+/* Experience start */
+.container-timeline {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  background-color: #182f3e;
+}
+.timeline {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+.timeline ul {
+  list-style: none;
+}
+.timeline ul li {
+  padding: 20px;
+  background-color: #1d3749;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}
+.timeline-content h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.timeline-content p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  text-align: justify;
+}
+.timeline-content .date {
+  font-size: 13px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+@media only screen and (min-width: 768px) {
+  .timeline::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: gray;
+  }
+
+  .timeline ul li {
+    width: 50%;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-90px);
+    border-radius: 20px 0px 20px 20px;
+  }
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(50px);
+    border-radius: 0px 20px 20px 20px;
+  }
+  .timeline ul li::after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: gray;
+    border-radius: 50%;
+    top: 0;
+  }
+  .timeline ul li:nth-child(odd)::after {
+    transform: translate(50%, -50%);
+    right: -75px;
+  }
+  .timeline ul li:nth-child(even)::after {
+    transform: translate(-50%, -50%);
+    left: -65px;
+  }
+  .timeline ul li:hover::after {
+    background-color: aqua;
+  }
+  .timeline-content .date {
+    position: absolute;
+    top: -30px;
+  }
+}
+/* Experience end */
+
+/* Skills start */
+.grid-a {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-content: center;
+  place-items: center;
+}
+
+.skills-bar-a,
+.skills-bar-b {
+  width: 70%;
+}
+
+.skills-bar-a li,
+.skills-bar-b li {
+  position: relative;
+  list-style: none;
+  margin: 50px 0;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #66bfbf;
+}
+
+.skills-bar-a li:before,
+.skills-bar-b li:before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 100%;
+  height: 15px;
+  background-color: rgba(249, 192, 186);
+  border-radius: 1000px;
+}
+
+.skills-bar-a li:after,
+.skills-bar-b li:after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 0;
+  height: 15px;
+  background-color: rgba(249, 164, 155);
+  border-radius: 1000px;
+  animation-duration: 0.7s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+.skills-bar-a li.html:after {
+  animation-name: html;
+}
+
+@keyframes html {
+  to {
+    width: 90%;
+  }
+}
+.skills-bar-b li.ps:after {
+  animation-name: ps;
+}
+@keyframes ps {
+  to {
+    width: 85%;
+  }
+}
+
+.skills-bar-a li.css:after {
+  animation-name: css;
+}
+
+@keyframes css {
+  to {
+    width: 85%;
+  }
+}
+.skills-bar-b li.ai:after {
+  animation-name: ai;
+}
+@keyframes ai {
+  to {
+    width: 90%;
+  }
+}
+
+.skills-bar-a li.php:after {
+  animation-name: php;
+}
+
+@keyframes php {
+  to {
+    width: 75%;
+  }
+}
+.skills-bar-b li.lrc:after {
+  animation-name: lrc;
+}
+@keyframes lrc {
+  to {
+    width: 85%;
+  }
+}
+
+.skills-bar-a li.bootstrap:after {
+  animation-name: bootstrap;
+}
+
+@keyframes bootstrap {
+  to {
+    width: 80%;
+  }
+}
+.skills-bar-b li.id:after {
+  animation-name: id;
+}
+@keyframes id {
+  to {
+    width: 70%;
+  }
+}
+
+.skills-bar-a li.mysql:after {
+  animation-name: mysql;
+}
+
+@keyframes mysql {
+  to {
+    width: 75%;
+  }
+}
+
+.skills-bar-a li.vue:after {
+  animation-name: vue;
+}
+
+@keyframes vue {
+  to {
+    width: 75%;
+  }
+}
+
+.skills-bar-a li.js:after {
+  animation-name: js;
+}
+
+@keyframes js {
+  to {
+    width: 90%;
+  }
+}
+
+.skills-bar-a li.ng:after {
+  animation-name: ng;
+}
+
+@keyframes ng {
+  to {
+    width: 70%;
+  }
+}
+/* Skills end */
+
+/* Form start */
+.form {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 15px;
+}
+.contact-me {
+  align-items: center;
+  text-align: center;
+  padding: 0 10px 50px 0;
+  color: #66bfbf;
+}
+
+.container-form {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  width: 90%;
+  max-width: 600px;
+}
+
+.input-group {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  border: 1px solid #66bfbf;
+  color: #66bfbf;
+  background: transparent;
+  font-size: 15px;
+}
+
+label {
+  height: 100%;
+  position: absolute;
+  left: 5;
+  top: 5;
+  padding: 10px;
+  color: #11999e;
+  cursor: text;
+  transition: 0.2s;
+}
+
+button {
+  padding: 10px 0;
+  color: #11999e;
+  outline: none;
+  background: transparent;
+  border: 1px solid #66bfbf;
+  width: 100%;
+  cursor: pointer;
+}
+button:hover {
+  background: white;
+  border: 3px solid #66bfbf;
+  color: #66bfbf;
+}
+
+input:focus ~ label,
+input:valid ~ label,
+textarea:focus ~ label,
+textarea:valid ~ label {
+  top: -35px;
+  font-size: 14px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row .input-group {
+  flex-basis: 50%;
+}
+/* Form end */
+
+/* Footer start */
+.container-footer {
+  background-color: #66bfbf;
+  padding: 3rem 0 1rem;
+}
+.copyright {
+  color: #eaf6f6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+.social a {
+  padding: 3rem;
+  opacity: 0.5;
+}
+/* Footer end */
+
+/* Notes for myself */
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+  padding: 1rem;
+}
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
