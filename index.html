@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="css/portfolio.css" />
+
+    <!-- Google Fonts -->
+
+    <!-- Icons -->
+    <script
+      src="https://kit.fontawesome.com/a99a1dce0d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>WD digital resume</title>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="icons/coffee-cup.gif" alt="coffee-cup"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-me">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#form">Contact me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel start -->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+      data-mdb-interval="1000"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/images/background.png" class="d-block w-100" alt="..." />
+          <div class="carousel-caption">
+            <h1 class="display-2">I'm Warda</h1>
+            <h3>A Software Developer</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/images/Background2_ccexpress.jpeg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="/images/Background3_ccexpress.jpeg"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Carousel end -->
+
+    <!--- Jumbotron -->
+    <div class="container-fluid">
+      <div class="row jumbotron">
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg col-xl-10">
+          <p class="lead text-end pt-3">
+            This is my digital resume and portfolio. Click the link to have a
+            look.
+          </p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg col-xl-2">
+          <a href="/portfolio.html"
+            ><button type="button" class="btn btn-outline-secondary btn-lg">
+              My Portfolio
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!--- Welcome Section -->
+    <div class="container-fluid padding">
+      <div class="row welcome text-center">
+        <section id="about-me" class="about-me">
+          <div class="col-12">
+            <h2 class="display-4">About me.</h2>
+          </div>
+
+          <div class="col-12">
+            <div class="row justify-content-center">
+              <div class="col-xs-9 col-sm-4 col-md-2">
+                <img src="/images/pp-img.png" class="img-fluid" alt="pp-img" />
+              </div>
+            </div>
+
+            <p class="fs-2">Hello.</p>
+            <div class="col-12">
+              <div class="row justify-content-center">
+                <div class="col-xs-12 col-sm-6 col-md-9">
+                  <p class="lead">
+                    Someone once said to me, there is no rule in life that
+                    states you should pick one career and stick to it for the
+                    rest of your life. So, I started taking different courses
+                    that interested me all the while expanding my skills and
+                    gaining knowledge in multiple areas. Education is an
+                    ever-learning process, and you can only get better with
+                    consistency, repetition, and time.
+                    <br />
+                    I’ve belonged to a hiking club since the early 2000’s but
+                    started hiking as a child when my siblings dragged me along
+                    on their hikes, it kinda stuck. Other career interests
+                    include occasional video gamer player, self-proclaimed chef
+                    mastering in peanut butter dishes and the collector of fruit
+                    and veg shaped plush dolls.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!--- Three Column Section -->
+    <hr class="my-4" />
+
+    <!-- Experience start -->
+    <div class="container-fluid padding">
+      <div class="row text-center padding">
+        <div class="col-lg-12 col-sm-9 col-md-6">
+          <section id="experience" class="experience">
+            <div class="col-12">
+              <h2 class="display-4">My Experiences.</h2>
+            </div>
+
+            <div class="container-timeline">
+              <div class="timeline">
+                <ul>
+                  <li>
+                    <div class="timeline-content">
+                      <h2 class="date">07/2012 - 03/2020</h2>
+                      <h1>
+                        Installation Administrator at MMI (Momentum Corporate)
+                      </h1>
+                      <p>
+                        Purpose of role: Accurate administrative function for
+                        the installation of New Business and Benefit
+                        Improvements, according to relevant service level
+                        agreements, onto the Momentum Corporate operating
+                        system. The purpose of which is to allow effective
+                        execution of retirement fund administration in line with
+                        business, legislative and industry requirements, thereby
+                        improving overall client experience.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="timeline-content">
+                      <h2 class="date">09/2011 - 06/2012</h2>
+                      <h1>
+                        Termination Administrator at MMI (Momentum Corporate)
+                      </h1>
+                      <p>
+                        Purpose of role: To provide an effective and efficient
+                        service to clients by receiving, evaluating, and
+                        responding to enquiries timeously.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="timeline-content">
+                      <h2 class="date">05/2008 - 08/2011</h2>
+                      <h1>
+                        Data & Recon Administrator at MMI (Momentum Corporate)
+                      </h1>
+                      <p>
+                        Purpose of role: Maintaining the integrity of Momentum’s
+                        membership and business partners data by accurately and
+                        timorously updating, correcting, and reconciling
+                        membership, premiums, client, broker, and service
+                        providers data through the various database programs.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="timeline-content">
+                      <h2 class="date">05/2007 - 04/2008</h2>
+                      <h1>Fund Administrator at MMI (Momentum Corporate)</h1>
+                      <p>
+                        Purpose of role: Accurately process retirement &
+                        withdrawal funds member’s data and provide fund
+                        administration services within agreed service levels
+                        made with clients and internal and external stakeholders
+                        to ensure that client expectations are managed.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- Experience end -->
+
+    <hr class="my-4" />
+
+    <!--- Two Column Section -->
+    <div class="container-fluid padding">
+      <div class="row text-center padding">
+        <div class="col-lg-12 col-sm-9 col-md-6">
+          <!-- Skills start -->
+          <section id="skills" class="skills">
+            <div class="container-skills">
+              <h2 class="display-4">My Skills.</h2>
+              <div class="grid-a">
+                <div class="skills-bar-a">
+                  <h3>Development</h3>
+                  <ul>
+                    <li class="html">HTML5</li>
+                    <li class="css">CSS3</li>
+                    <li class="php">PHP</li>
+                    <li class="bootstrap">Bootstrap</li>
+                    <li class="mysql">MySQL</li>
+                    <li class="vue">Vue.js</li>
+                    <li class="js">JavaScript</li>
+                    <li class="ng">Angular</li>
+                  </ul>
+                </div>
+
+                <div class="skills-bar-b">
+                  <h3>Design</h3>
+                  <ul>
+                    <li class="ps">Adobe Photoshop</li>
+                    <li class="ai">Adobe Illustrator</li>
+                    <li class="lrc">Adobe Lightroom</li>
+                    <li class="id">Adobe InDesign</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- Skills end -->
+    <hr class="my-4" />
+
+    <!-- Education start -->
+
+    <div class="container-fluid padding">
+      <div class="row welcome text-center g-3">
+        <div class="col-12">
+          <section id="education" class="education">
+            <h2 class="display-4">My Education.</h2>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!--- Cards -->
+    <div class="container-fluid padding">
+      <div class="row padding">
+        <div class="col-12 col-md-6 col-lg-2">
+          <div class="card">
+            <img class="card-imd-top" src="icons/hacker.gif" alt="" />
+            <div class="card-body">
+              <h4 class="card-title">CodeSpace Academy</h4>
+              <p class="card-text">Certificate: Software Development</p>
+              <p class="card-date">Feb 2022 - Current</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-2">
+          <div class="card">
+            <img class="card-imd-top" src="icons/crayons.gif" alt="" />
+            <div class="card-body">
+              <h4 class="card-title">Studio7 School of Photography & Design</h4>
+              <p class="card-text">
+                Certification: Photography & Graphic Design
+              </p>
+              <p class="card-date">Jan 2020 - Dec 2020</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-2">
+          <div class="card">
+            <img class="card-imd-top" src="icons/signposts.gif" alt="" />
+            <div class="card-body">
+              <h4 class="card-title">Cape Academy of Guiding Services</h4>
+              <p class="card-text">
+                Certification: Tourism (Cultural Site Guide NQF4)
+              </p>
+              <p class="card-date">Apr 2017 - Sep 2017</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-2">
+          <div class="card">
+            <img class="card-imd-top" src="icons/backpack.gif" alt="" />
+            <div class="card-body">
+              <h4 class="card-title">
+                South African National Parks: Volunteer Ranger Program
+              </h4>
+              <p class="card-text">Certification: Conservation</p>
+              <p class="card-date">Apr 2017 - Jan 2018</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-2">
+          <div class="card">
+            <img class="card-imd-top" src="icons/notebook.gif" alt="" />
+            <div class="card-body">
+              <h4 class="card-title">PST Presentation Software Training</h4>
+              <p class="card-text">Certification: MS Excel 2007 for Windows</p>
+              <p class="card-date">May 2011 - Aug 2011</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-2">
+          <div class="card">
+            <img class="card-imd-top" src="icons/university.gif" alt="" />
+            <div class="card-body">
+              <h4 class="card-title">Rosebank College, Cape Town Campus</h4>
+              <p class="card-text">Diploma: Internet Engineering</p>
+              <p class="card-date">Jan 2005 - Dec 2007</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-2">
+          <div class="card">
+            <img class="card-imd-top" src="icons/mortarboard.gif" alt="" />
+            <div class="card-body">
+              <h4 class="card-title">Rocklands High School</h4>
+              <p class="card-text">Graduated</p>
+              <p class="card-date">2002</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Education start -->
+
+    <hr class="my-4" />
+
+    <!-- Contact me start -->
+    <div class="container-fluid padding">
+      <div class="row text-center padding">
+        <div class="col-12">
+          <section id="form" class="form">
+            <div class="container-form">
+              <form>
+                <div class="contact-me">
+                  <h2 class="display-4">Contact Me.</h2>
+                </div>
+
+                <div class="row">
+                  <div class="input-group">
+                    <input type="text" id="name" required />
+                    <label for="name"
+                      ><i class="fa-solid fa-user"></i> Your Name</label
+                    >
+                  </div>
+                  <div class="input-group">
+                    <input type="text" id="number" required />
+                    <label for="number"
+                      ><i class="fa-solid fa-phone"></i> Phone No.</label
+                    >
+                  </div>
+                </div>
+
+                <div class="input-group">
+                  <input type="email" id="email" required />
+                  <label for="email"
+                    ><i class="fa-solid fa-envelope"></i> Email address</label
+                  >
+                </div>
+                <div class="input-group">
+                  <textarea id="message" rows="8" required></textarea>
+                  <label for="message"
+                    ><i class="fa-solid fa-comments"></i> Your message</label
+                  >
+                </div>
+                <button type="submit">
+                  SUBMIT <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- Contact me end -->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+
+  <!-- Footer start -->
+  <footer id="footer" class="footer">
+    <div class="container-fluid">
+      <div class="row text-center">
+        <div class="col-12 social padding">
+          <div class="container-footer">
+            <a class="footer-link" href="https://www.linkedin.com/"
+              ><img src="/icons/linkedin_round.png" alt="linkedin" width="45px"
+            /></a>
+            <a class="footer-link" href="https://github.com/"
+              ><img src="/icons/github_round.png" alt="github" width="45px"
+            /></a>
+            <a class="footer-link" href="https://www.instagram.com/"
+              ><img
+                src="/icons/instagram_round.png"
+                alt="instagram"
+                width="45px"
+            /></a>
+            <p class="copyright">© 2022 Warda Davids.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer end -->
+</html>
