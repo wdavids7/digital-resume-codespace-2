@@ -68,53 +68,12 @@
                   >Home</a
                 >
               </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="/index.html"
-                  >About me</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="/index.html"
-                  >Experience</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="/index.html"
-                  >Skills</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="/index.html"
-                  >Education</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="/index.html"
-                  >Contact me</a
-                >
-              </li>
             </ul>
           </div>
         </div>
       </div>
     </nav>
     <!-- Navbar end -->
-
 
     <!-- Carousel start -->
     <div
@@ -229,6 +188,79 @@
     </div>
     <!-- Carousel end -->
 
+    <!--- Jumbotron start-->
+    <div class="container-fluid">
+      <div class="row jumbotron">
+        <p class="lead text-center pt-3">
+          Welcome to my portfolio. This sample contains only my graphic design
+          pieces. Photography pieces will be added soon, so keep an eye out! For
+          more information please contact me.
+        </p>
+
+        <div class="container mt-5 text-center">
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#myModal"
+          >
+            Contact me
+          </button>
+          <div class="modal" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Contact me</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label class="form-label required">Name</label>
+                      <input type="text" class="form-control" />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label required">Email</label>
+                      <input type="email" class="form-control" />
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label required"
+                        >Type your message here.</label
+                      >
+                      <textarea class="form-control"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="submit"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#successModal"
+                    data-bs-dismiss="modal"
+                  >
+                    Submit
+                  </button>
+                  <button
+                    type="submit"
+                    class="btn btn-danger"
+                    data-bs-dismiss="modal"
+                  >
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Jumbotron end -->
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
       integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
@@ -241,9 +273,6 @@
     ></script>
   </body>
 </html>
-
-
-
 
 <!-- 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">

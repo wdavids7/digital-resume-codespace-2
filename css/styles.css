@@ -1,131 +1,51 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@300&family=Poppins:wght@400;500;700&display=swap");
-
-/* General */
+/* General start*/
 html,
 body {
-  height: 100%;
-  width: 100%;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat";
   color: #40514e;
+  margin: 0px;
+  padding: 0px;
 }
+
+hr {
+  border: 6px dotted #eaf6f6;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto 100px auto;
+}
+/* General end*/
+
+/* Banner start */
+.banner-image {
+  background-image: url(/images/Artboard\ 1_Landing\ page_resized.png);
+  background-size: cover;
+  height: 100vh !important;
+  background-position: center;
+  margin: 0;
+  margin-top: -16px;
+  justify-content: center;
+  align-items: center;
+}
+.banner-img h1 {
+  font-family: "Sacramento";
+  font-size: 5rem;
+  color: #874356 !important;
+}
+.banner-img p {
+  color: #874356 !important;
+}
+/* Banner end */
 
 /* Navbar start */
-.navbar {
-  padding: 0.8rem;
-}
-.navbar-nav li {
-  padding-right: 20px;
-}
-.nav-link {
-  font-size: 1.1em !important;
-}
-
-.navbar-brand img {
-  width: 40px;
-  margin-bottom: 7px;
+.nav-item {
+  margin-right: 15px;
 }
 /* Navbar end */
 
-/* Carousel start */
-.carousel-inner img {
-  width: 100%;
-  height: 100%;
-}
-.carousel-caption {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.carousel-caption h1 {
-  font-size: 500%;
-  text-shadow: 1px 1px 15px #40514e;
-}
-.carousel-caption h3 {
-  font-size: 200%;
-  font-weight: 500;
-  text-shadow: 1px 1px 10px #40514e;
-  padding-bottom: 1rem;
-}
-
-.carousel-item {
-  transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-  -webkit-backface-visibility: visible;
-  backface-visibility: visible;
-}
-/* Carousel end */
-
-/* Jumbotron start */
-.jumbotron {
-  padding: 1rem;
-  border-radius: 0;
-}
-
-.padding {
-  padding-bottom: 2rem;
-}
-
-.welcome {
-  width: 75%;
-  margin: 0 auto;
-  padding-top: 2rem;
-}
-
-/* Jumbotron end */
-
-/*---Media Queries --*/
-@media (max-width: 992px) {
-  .social a {
-    font-size: 4em;
-    padding: 2rem;
-  }
-}
-@media (max-width: 768px) {
-  .carousel-caption {
-    top: 45%;
-  }
-
-  .carousel-caption h1 {
-    font-size: 350%;
-  }
-  .carousel-caption h3 {
-    font-size: 140%;
-    font-weight: 400;
-    padding-bottom: 0.2rem;
-  }
-  .display-4 {
-    font-size: 200%;
-  }
-
-  .social a {
-    font-size: 2.5em;
-    padding: 1.2rem;
-  }
-}
-@media (max-width: 576px) {
-  .carousel-caption {
-    top: 40%;
-  }
-
-  .carousel-caption h1 {
-    font-size: 250%;
-  }
-  .carousel-caption h3 {
-    font-size: 110%;
-  }
-  .carousel-indicators {
-    display: none;
-  }
-  .display-4 {
-    font-size: 160%;
-  }
-
-  .social a {
-    font-size: 2em;
-    padding: 0.7rem;
-  }
+/* Main content start */
+.about-me-intro p {
+  text-align: center;
+  text-justify: inter-character;
 }
 
 /* Experience start */
@@ -137,6 +57,10 @@ body {
   justify-content: center;
   padding: 100px 0;
   background-color: #182f3e;
+}
+.timeline h2 {
+  position: relative;
+  bottom: 100px;
 }
 .timeline {
   width: 100%;
@@ -193,6 +117,7 @@ body {
 
   .timeline ul li {
     width: 50%;
+    margin-top: -50px;
     margin-bottom: 50px;
     position: relative;
   }
@@ -243,11 +168,17 @@ body {
   grid-template-columns: 1fr 1fr;
   place-content: center;
   place-items: center;
+  color: #66bfbf;
+}
+.container-skills h2 {
+  position: relative;
+  top: 65px;
 }
 
 .skills-bar-a,
 .skills-bar-b {
   width: 70%;
+  text-align: center;
 }
 
 .skills-bar-a li,
@@ -400,9 +331,15 @@ body {
 }
 /* Skills end */
 
+/* Education start */
+.education h2 {
+  position: relative;
+  top: 65px;
+}
+/* Education end */
+
 /* Form start */
 .form {
-  font-family: "Montserrat", sans-serif;
   width: 100%;
   height: 65vh;
   display: flex;
@@ -410,11 +347,13 @@ body {
   text-align: center;
   justify-content: center;
   font-size: 15px;
+  margin-bottom: 200px;
 }
 .contact-me {
   align-items: center;
   text-align: center;
-  padding: 0 10px 50px 0;
+  padding: 50px 10px 50px 0;
+  margin-top: 70px;
   color: #66bfbf;
 }
 
@@ -496,37 +435,15 @@ textarea:valid ~ label {
 .container-footer {
   background-color: #66bfbf;
   padding: 3rem 0 1rem;
+  text-align: center;
 }
 .copyright {
   color: #eaf6f6;
   font-size: 0.75rem;
   padding: 20px 0;
 }
-.social a {
+.footer a {
   padding: 3rem;
   opacity: 0.5;
 }
 /* Footer end */
-
-/* Notes for myself */
-/*--- Bootstrap Padding Fix --*/
-[class*="col-"] {
-  padding: 1rem;
-}
-
-/*
-Extra small (xs) devices (portrait phones, less than 576px)
-No media query since this is the default in Bootstrap
-
-Small (sm) devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-Medium (md) devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-Large (lg) devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-Extra (xl) large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-*/
